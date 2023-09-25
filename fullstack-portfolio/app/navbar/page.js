@@ -1,3 +1,4 @@
+import Link from 'next/link'
 export default function Navbar() {
   return (
     <>
@@ -25,7 +26,7 @@ export default function Navbar() {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>Item 1</a>
+              <Link href="/about">About Me</Link>
               </li>
               <li>
                 <a>Parent</a>
@@ -48,23 +49,17 @@ export default function Navbar() {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Item 1</a>
+            <Link href="/about">About Me</Link>
             </li>
-            <li tabIndex={0}>
-              <details>
-                <summary>Parent</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
+               <li>
+            <Link href="/work">Work</Link>
             </li>
+          
             <li>
-              <a>Item 3</a>
+              <Link href="/skills">Skills</Link>
+            </li>
+                <li>
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </div>
