@@ -4,8 +4,8 @@ import { FaGithub } from "react-icons/fa";
 export default function Navbar() {
   return (
     <>
-      <div className="navbar text-white text-2xl">
-        <div className="navbar-start">
+      <div className="navbar text-white ">
+        <div className="navbar-start text-3xl">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
@@ -25,10 +25,10 @@ export default function Navbar() {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-orange-300 rounded-box w-20 text-3xl"
             >
               <li>
-                <Link href="/about">About Me</Link>
+                <Link href="/about">About</Link>
               </li>
               <li>
                 <Link href="/work">Work</Link>
