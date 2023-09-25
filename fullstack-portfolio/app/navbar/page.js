@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 export default function Navbar() {
   return (
     <>
@@ -26,22 +26,19 @@ export default function Navbar() {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-              <Link href="/about">About Me</Link>
+                <Link href="/about">About Me</Link>
               </li>
               <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
+              <Link href="/work">Work</Link>
+            </li>
+
+            <li>
+              <Link href="/skills">Skills</Link>
+            </li>
+            <li>
+              <Link href="/contact">Contact</Link>
+            </li>
+              
             </ul>
           </div>
           <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
@@ -49,16 +46,16 @@ export default function Navbar() {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-            <Link href="/about">About Me</Link>
+              <Link href="/about">About Me</Link>
             </li>
-               <li>
-            <Link href="/work">Work</Link>
+            <li>
+              <Link href="/work">Work</Link>
             </li>
-          
+
             <li>
               <Link href="/skills">Skills</Link>
             </li>
-                <li>
+            <li>
               <Link href="/contact">Contact</Link>
             </li>
           </ul>
