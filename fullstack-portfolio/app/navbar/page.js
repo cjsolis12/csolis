@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa";
-import { FaGithub} from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 export default function Navbar() {
   return (
     <>
@@ -61,13 +61,17 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end flex space-x-4">
+            <a href="https://www.linkedin.com/in/claudia-solis-48599422a/" target="_blank">
           <button className="text-2xl">
             <FaLinkedin />
           </button>
+          </a>
+          <a href="https://github.com/cjsolis12" target="_blank">
           <button className="text-2xl">
             <FaGithub />
           </button>
+          </a>
         </div>
       </div>
     </>
