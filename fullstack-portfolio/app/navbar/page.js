@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub} from "react-icons/fa";
 export default function Navbar() {
   return (
     <>
@@ -29,16 +31,15 @@ export default function Navbar() {
                 <Link href="/about">About Me</Link>
               </li>
               <li>
-              <Link href="/work">Work</Link>
-            </li>
+                <Link href="/work">Work</Link>
+              </li>
 
-            <li>
-              <Link href="/skills">Skills</Link>
-            </li>
-            <li>
-              <Link href="/contact">Contact</Link>
-            </li>
-              
+              <li>
+                <Link href="/skills">Skills</Link>
+              </li>
+              <li>
+                <Link href="/contact">Contact</Link>
+              </li>
             </ul>
           </div>
           <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
@@ -61,7 +62,12 @@ export default function Navbar() {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <button className="text-2xl">
+            <FaLinkedin />
+          </button>
+          <button className="text-2xl">
+            <FaGithub />
+          </button>
         </div>
       </div>
     </>
