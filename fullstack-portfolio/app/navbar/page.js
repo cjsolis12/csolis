@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 export default function Navbar() {
   return (
     <>
-      <div className="navbar bg-base-100">
+      <div className="navbar text-white text-2xl">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
