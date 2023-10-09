@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import projectData from "@/public/ProjectData";
+import extraWork from "@/public/extraWork";
 import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import { FaLink } from "react-icons/fa";
@@ -72,7 +73,7 @@ export default function work() {
                         href={item.githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-lilac p-4"
+                        className="text- p-4"
                       >
                         <FaGithub />
                       </a>
@@ -80,7 +81,7 @@ export default function work() {
                         href={item.websiteLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-lilac p-4"
+                        className="text-blue p-4"
                       >
                         <FaLink />
                       </a>
@@ -92,6 +93,33 @@ export default function work() {
           </div>
         </div>
       </div>
+      <div className="projects mt-64 pt-40">
+        <h2 className="p-8 text-white text-5xl text-center ">
+          Other Projects / Work
+        </h2>
+        <div className="extra-work grid grid-cols-1 md:grid-cols-3 gap-4 justify-center flex-wrap p-8">
+          {extraWork.map((extraWork, index) => (
+            <div
+              key={index}
+              className="other-projects text-white border border-white rounded-lg p-8"
+            >
+              <h3 className="text-center m-4 text-3xl">{extraWork.title}</h3>
+              <p className="flex-grow">{extraWork.description}</p>
+              <div className="mt-auto text-center">
+                <a
+                  href={extraWork.link}
+                  className="btn-link text-lilac"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visit Site
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      ;
     </>
   );
 }
