@@ -1,7 +1,11 @@
 export default function contact() {
   return (
     <>
-      <div className="flex justify-center items-center h-screen">
+          <div className="px-4 md:w-10/12 xl:w-8/12 mx-auto text-center text-white py-16">
+        <h1 className=" text-rose-300 text-2xl md:text-4xl font-medium mb-4">Contact Me</h1>
+  
+      </div>
+      <div className="flex justify-center items-center">
         <div className="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col justify-center">
           <h2 className="text-gray-900 text-3xl mb-1 font-medium title-font">
             Let's Talk!

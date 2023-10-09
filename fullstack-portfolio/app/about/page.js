@@ -38,7 +38,7 @@ export default function About() {
   return (
     <div>
       <div className="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
-        <div className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
+        <div className="w-full lg:w-3/5 relative rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
           <div className="p-4 md:p-12 text-center lg:text-left">
             <h1 className="text-3xl font-bold pt-8 lg:pt-0">About Me</h1>
             <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-rose-300 opacity-25"></div>
@@ -67,11 +67,12 @@ export default function About() {
           </div>
         </div>
 
-        <div className="w-full lg:w-2/5">
+        <div className="w-full lg:w-2/5 absolute right-20 mt-8 mr-8 lg:mr-0">
           <img
             src={aboutMe.src}
-            alt="About Me"
+            alt="personal photo"
             className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block"
+            style={{ transform: "translate(20px, -20px)", zIndex: 1,  boxShadow: "3px 5px 10px rgba(255, 182, 193, 0.7)" }}
           ></img>
         </div>
       </div>
