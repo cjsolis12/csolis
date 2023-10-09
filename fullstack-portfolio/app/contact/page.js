@@ -6,7 +6,7 @@ export default function contact() {
   
       </div>
       <div className="flex justify-center items-center">
-        <div className="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col justify-center">
+        <div className="lg:w-1/3 md:w-1/2  bg-white opacity-80 rounded-lg p-8 flex flex-col justify-center">
           <h2 className="text-gray-900 text-3xl mb-1 font-medium title-font">
             Let's Talk!
           </h2>
