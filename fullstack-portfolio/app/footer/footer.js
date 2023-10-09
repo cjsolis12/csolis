@@ -2,7 +2,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 export default function Footer() {
   return (
-    <footer className="footer items-center p-4 bg-neutral text-neutral-content">
+    <footer className="footer items-center p-4 bg-rose-400 text-gray-900">
       <aside className="items-center grid-flow-col">
         <p>Copyright © 2023 - All right reserved</p>
       </aside>

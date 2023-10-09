@@ -93,7 +93,7 @@ export default function work() {
           </div>
         </div>
       </div>
-      <div className="projects mt-64 pt-40">
+      <div className="projects  pt-40">
         <h2 className="p-8 text-white text-5xl text-center ">
           Other Projects / Work
         </h2>
@@ -108,7 +108,7 @@ export default function work() {
               <div className="mt-auto text-center">
                 <a
                   href={extraWork.link}
-                  className="btn-link text-lilac"
+                  className="btn-link text-orange-300"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
