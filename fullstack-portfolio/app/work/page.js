@@ -108,7 +108,7 @@ export default function work() {
               <div className="mt-auto text-center">
                 <a
                   href={extraWork.link}
-                  className="btn-link text-orange-300"
+                  className="btn-link text-rose-300"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

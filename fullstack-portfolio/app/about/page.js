@@ -16,7 +16,7 @@ export default function About() {
         work. However, I have a special interest in the backend technologies. I
         am fascinated by how different technologies work together to create
         amazing user experiences. Currently, my experience includes working with
-        <span className="text-fuchsia-900">
+        <span className="text-rose-500">
           {" "}
           Node.js, Express, MongoDB, MySQL, and Firebase
         </span>
@@ -41,25 +41,25 @@ export default function About() {
         <div className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
           <div className="p-4 md:p-12 text-center lg:text-left">
             <h1 className="text-3xl font-bold pt-8 lg:pt-0">About Me</h1>
-            <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-fuchsia-300 opacity-25"></div>
+            <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-rose-300 opacity-25"></div>
            
             {contentMap[selectedContent]}
-            <div className="pt-12 pb-8 flex">
+            <div className="pt-12 pb-8 flex space-x-4">
               <button
                 onClick={() => buttonClicked("default")}
-                className="bg-fuchsia-700 hover:bg-fuchsia-300 text-white font-bold py-2 px-4 rounded-full"
+                className="w-36  bg-rose-300 hover:bg-rose-400 text-white font-bold py-2 px-4 rounded-full"
               >
                 Web Developer
               </button>
               <button
                 onClick={() => buttonClicked("careerSwap")}
-                className="bg-fuchsia-700 hover:bg-fuchsia-300 text-white font-bold py-2 px-4 rounded-full"
+                className="w-36 bg-rose-300 hover:bg-rose-400 text-white font-bold py-2 px-4 rounded-full"
               >
                 Career Swap
               </button>
               <button
                 onClick={() => buttonClicked("funFacts")}
-                className="bg-fuchsia-700 hover:bg-fuchsia-300 text-white font-bold py-2 px-4 rounded-full"
+                className=" w-36 bg-rose-300 hover:bg-rose-400 text-white font-bold py-2 px-4 rounded-full"
               >
                 Fun Facts
               </button>

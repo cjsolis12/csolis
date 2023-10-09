@@ -25,7 +25,7 @@ export default function Navbar() {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-orange-300 rounded-box w-20 text-3xl"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-rose-300 rounded-box w-20 text-3xl"
             >
               <li>
                 <Link href="/about">About</Link>
@@ -42,7 +42,7 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+          <a className="btn btn-ghost normal-case text-xl text-rose-300">Claudia S.</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
